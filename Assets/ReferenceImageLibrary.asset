@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4956862672025070271
+  m_GuidHigh: 4391387377351183532
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5689424623309320391
+      m_GuidHigh: 725624196854787970
+    m_SerializedTextureGuid:
+      m_GuidLow: 16268258742041402231
+      m_GuidHigh: 8122092725690924456
+    m_Size: {x: 0.635, y: 0.8866038}
+    m_SpecifySize: 1
+    m_Name: plains
+    m_Texture: {fileID: 0}
