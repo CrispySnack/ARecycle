@@ -27,3 +27,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: plains
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4793269606363776938
+      m_GuidHigh: 3132267494328521866
+    m_SerializedTextureGuid:
+      m_GuidLow: 9224632568074786331
+      m_GuidHigh: 7545676300625667993
+    m_Size: {x: 0.635, y: 0.8866038}
+    m_SpecifySize: 1
+    m_Name: forest
+    m_Texture: {fileID: 0}
