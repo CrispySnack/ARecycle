@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6375291692083750960}
   - component: {fileID: -1448853842000930188}
   m_Layer: 0
-  m_Name: forest
+  m_Name: object1
   m_TagString: Waste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
