@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9188374835873854146}
   - component: {fileID: 6375291692083750960}
-  - component: {fileID: -1448853842000930188}
+  - component: {fileID: 5807109264019693838}
   m_Layer: 0
   m_Name: object1
   m_TagString: Waste
@@ -55,7 +55,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1448853842000930188
+--- !u!114 &5807109264019693838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
