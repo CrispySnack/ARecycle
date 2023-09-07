@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8379288054531855701}
   - component: {fileID: -4232302158089231993}
   m_Layer: 5
-  m_Name: wrongmssg
+  m_Name: RecGenWaste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b04d97b056b0c84382ec993c2f9e76f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeathTimer: 4
 --- !u!1 &2226875939882522352
 GameObject:
   m_ObjectHideFlags: 0

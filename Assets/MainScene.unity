@@ -260,9 +260,12 @@ GameObject:
   m_Component:
   - component: {fileID: 782628379}
   - component: {fileID: 782628378}
+  - component: {fileID: 782628385}
+  - component: {fileID: 782628384}
   - component: {fileID: 782628377}
   - component: {fileID: 782628376}
   - component: {fileID: 782628380}
+  - component: {fileID: 782628383}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -283,7 +286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArPrefabs:
-  - {fileID: 8269826125146885970, guid: 2e3654cea627f0f4bafedc01a18b7efb, type: 3}
   - {fileID: 6881607251391839693, guid: c6259062853205d4db3e9115c84fd618, type: 3}
 --- !u!114 &782628377
 MonoBehaviour:
@@ -346,6 +348,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25aebd960553df44aac7f0bb76154b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &782628383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c9a6232a30ffb4c95b960deebe315a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bins: {fileID: 7026320492165898213, guid: 0a84fa6aab182384fa77c9106eaef60f, type: 3}
+--- !u!114 &782628384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728ad7fae8e460a4ba41265c7308d757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AnchorPrefab: {fileID: 0}
+--- !u!114 &782628385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlanePrefab: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb,
+    type: 3}
+  m_DetectionMode: 0
 --- !u!1 &1759250878
 GameObject:
   m_ObjectHideFlags: 0

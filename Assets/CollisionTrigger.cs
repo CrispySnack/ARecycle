@@ -41,22 +41,27 @@ public class CollisionTest : MonoBehaviour
                     if(other.tag == "GFT")
                     {
                         IsCorrect = true;
+                        Instantiate(goodmssg, new Vector3(0,0,0), Quaternion.identity);
                     }
                     else if(other.tag == "PMD")
                     {
                         IsWrong = true;
+                        Instantiate(wrongmssg, new Vector3(0,0,0), Quaternion.identity);
                     }
                     else if(other.tag == "Papier")
                     {
                         IsWrong = true;
+                        Instantiate(wrongmssg, new Vector3(0,0,0), Quaternion.identity);
                     }
                     else if(other.tag == "Rest")
                     {
                         IsWrong = true;
+                        Instantiate(wrongmssg, new Vector3(0,0,0), Quaternion.identity);
                     }
                     else if(other.tag == "Inlever")
                     {
                         IsWrong = true;
+                        Instantiate(wrongmssg, new Vector3(0,0,0), Quaternion.identity);
                     }
                 }
 
@@ -88,6 +93,8 @@ public class CollisionTest : MonoBehaviour
         }
         */
 
+
+/*
         if(IsCorrect == true)
         {
             Instantiate(goodmssg, new Vector3(0,0,0), Quaternion.identity);
@@ -97,6 +104,7 @@ public class CollisionTest : MonoBehaviour
         {
             Instantiate(wrongmssg, new Vector3(0,0,0), Quaternion.identity);
         }
+        */
     }
 
 }
