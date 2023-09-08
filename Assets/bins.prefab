@@ -616,6 +616,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4013646055248668966}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3652726704135352909}
   m_SourcePrefab: {fileID: 100100000, guid: de4da3906a001624fabcc7838ddf2eb4, type: 3}
 --- !u!4 &8628118333511077335 stripped
 Transform:
@@ -677,6 +681,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3652726704135352909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9004643188811945837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b9c8717097eba4183a67fbd9d252be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CorrectMessage: {fileID: 4647350076870867512, guid: 3bcd71e77d699b34b83cf4da2103c5c3,
+    type: 3}
+  NotCompostableMessage: {fileID: 998945960523931908, guid: 9f8d209b571851a4f84fe97c717227ff,
+    type: 3}
+  ChemMessage: {fileID: 998945960523931908, guid: 24043512f8264004fa3abbd0d7954b6f,
+    type: 3}
+  RecOtherBinMessage: {fileID: 998945960523931908, guid: 43e2bebd8da277c4ba5a9192394228e4,
+    type: 3}
+  NonRecMessage: {fileID: 998945960523931908, guid: d24e222f46b4c574dac711af32ae2869,
+    type: 3}
+  coltimer: 3
 --- !u!1001 &9060083655148051652
 PrefabInstance:
   m_ObjectHideFlags: 0
