@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class OrganicTrigger : MonoBehaviour
+public class PaperTrigger : MonoBehaviour
 {
     public GameObject CorrectMessage;
-    public GameObject NotCompostableMessage;
     public GameObject ChemMessage;
     public GameObject RecOtherBinMessage;
     public GameObject NonRecMessage;
+    public GameObject WetMessage;
+    public GameObject LiningMessage;
+    public GameObject NoRipMessage;
     ParticleSystem sprinkles;
     public float coltimer = 3;
 
@@ -38,7 +40,7 @@ public class OrganicTrigger : MonoBehaviour
                 {
                     coltimer = 0;
 
-                    if(other.GetComponent<CustomTag>().HasTag("GFT"))
+                    if(other.GetComponent<CustomTag>().HasTag("Paper"))
                     {
                         Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
                         sprinkles.Play();
@@ -47,7 +49,7 @@ public class OrganicTrigger : MonoBehaviour
                     {
                         Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Plastic") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics"))
+                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics"))
                     {
                         Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
@@ -55,9 +57,17 @@ public class OrganicTrigger : MonoBehaviour
                     {
                         Instantiate(NonRecMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("NotCompostable"))
+                    else if(other.GetComponent<CustomTag>().HasTag("Wet"))
                     {
-                        Instantiate(NotCompostableMessage, new Vector3(0,0,0), Quaternion.identity);
+                        Instantiate(WetMessage, new Vector3(0,0,0), Quaternion.identity);
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("PLasticLining"))
+                    {
+                        Instantiate(LiningMessage, new Vector3(0,0,0), Quaternion.identity);
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("NotRippable"))
+                    {
+                        Instantiate(NoRipMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
                 }
 

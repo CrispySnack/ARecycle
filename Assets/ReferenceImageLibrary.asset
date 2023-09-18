@@ -47,3 +47,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: object3
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5541195453191751462
+      m_GuidHigh: 11373066787862397612
+    m_SerializedTextureGuid:
+      m_GuidLow: 4617569977460615591
+      m_GuidHigh: 1229410976139309226
+    m_Size: {x: 0.4233, y: 0.4233}
+    m_SpecifySize: 1
+    m_Name: bins
+    m_Texture: {fileID: 0}

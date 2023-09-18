@@ -54,20 +54,27 @@ public class PlaceTrackedImages : MonoBehaviour {
         // For all prefabs that have been created so far, set them active or not depending
         // on whether their corresponding image is currently being tracked
         foreach (var trackedImage in eventArgs.updated)
-        {
+        {   
+            if(trackedImage.referenceImage.name != "bins")
+            {
             _instantiatedPrefabs[trackedImage.referenceImage.name]
                 .SetActive(trackedImage.trackingState == TrackingState.Tracking);
+            }   
         }
 
         // If the AR Subsystem has given up looking for a tracked image
         foreach (var trackedImage in eventArgs.removed)
         {
+            if(trackedImage.referenceImage.name != "bins")
+            {
             // Destroy its prefab
             Destroy(_instantiatedPrefabs[trackedImage.referenceImage.name]);
             // Also remove the instance from our array
             _instantiatedPrefabs.Remove(trackedImage.referenceImage.name);
             // Or, simply set the prefab instance to inactive
             _instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(false);
+            }
         }
+
     }
 }

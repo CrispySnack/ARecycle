@@ -9,13 +9,15 @@ public class GeneralTrigger : MonoBehaviour
     public GameObject CorrectMessage;
     public GameObject ChemMessage;
     public GameObject RecyclableMessage;
+    ParticleSystem sprinkles;
+
     public float coltimer = 3;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        sprinkles = GetComponent<ParticleSystem>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -38,6 +40,7 @@ public class GeneralTrigger : MonoBehaviour
                     if(other.GetComponent<CustomTag>().HasTag("General"))
                     {
                         Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
+                        sprinkles.Play();
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
