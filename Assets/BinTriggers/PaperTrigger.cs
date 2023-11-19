@@ -49,7 +49,7 @@ public class PaperTrigger : MonoBehaviour
                     {
                         Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics"))
+                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics") || other.GetComponent<CustomTag>().HasTag("Deposit"))
                     {
                         Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
@@ -61,7 +61,7 @@ public class PaperTrigger : MonoBehaviour
                     {
                         Instantiate(WetMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("PLasticLining"))
+                    else if(other.GetComponent<CustomTag>().HasTag("PlasticLining"))
                     {
                         Instantiate(LiningMessage, new Vector3(0,0,0), Quaternion.identity);
                     }

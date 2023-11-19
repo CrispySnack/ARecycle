@@ -286,8 +286,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArPrefabs:
-  - {fileID: 6881607251391839693, guid: c6259062853205d4db3e9115c84fd618, type: 3}
-  - {fileID: 4339307485165926540, guid: 0a84fa6aab182384fa77c9106eaef60f, type: 3}
+  - {fileID: 6686391754347583313, guid: 0a84fa6aab182384fa77c9106eaef60f, type: 3}
+  - {fileID: 6629144731749733528, guid: 776899f7ce9dfb142a98ff38c163821c, type: 3}
+  - {fileID: 6629144731749733528, guid: 3515dcb0e0d6d2b48a81040a97b84d9d, type: 3}
+  - {fileID: 6629144731749733528, guid: 7723853492607124eb73e9b8fc8955f6, type: 3}
+  - {fileID: 6629144731749733528, guid: aebb7c609585cf044b67aeddf28bf621, type: 3}
+  - {fileID: 6629144731749733528, guid: 304f73ceb4cdd7645af9bc361dbbb0c2, type: 3}
+  - {fileID: 6629144731749733528, guid: 9720d7c807f081c43a9ff3fa6c353bd4, type: 3}
+  - {fileID: 6629144731749733528, guid: b80044917e539db498e4b4d104c15e7c, type: 3}
 --- !u!114 &782628377
 MonoBehaviour:
   m_ObjectHideFlags: 0

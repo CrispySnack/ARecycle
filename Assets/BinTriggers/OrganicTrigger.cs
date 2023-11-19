@@ -47,7 +47,7 @@ public class OrganicTrigger : MonoBehaviour
                     {
                         Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Plastic") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics"))
+                    else if(other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Plastic") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics") || other.GetComponent<CustomTag>().HasTag("Deposit") || other.GetComponent<CustomTag>().HasTag("Paper"))
                     {
                         Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
                     }

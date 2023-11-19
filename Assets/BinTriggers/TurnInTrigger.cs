@@ -36,7 +36,7 @@ public class TurnInTrigger : MonoBehaviour
                 {
                     coltimer = 0;
 
-                    if(other.GetComponent<CustomTag>().HasTag("Chem") || other.GetComponent<CustomTag>().HasTag("Deposit") || other.GetComponent<CustomTag>().HasTag("PlateGlass") || other.GetComponent<CustomTag>().HasTag("Propellant"))
+                    if(other.GetComponent<CustomTag>().HasTag("Chem") || other.GetComponent<CustomTag>().HasTag("Deposit") || other.GetComponent<CustomTag>().HasTag("PlateGlass"))
                     {
                         Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
                         sprinkles.Play();
