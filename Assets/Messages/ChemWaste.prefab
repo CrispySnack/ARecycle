@@ -185,7 +185,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Incorrect!
 
-    This Object contains chemical waste and should be thrown
+    This object contains chemical waste and should be thrown
     away separately, as it could contaminate other waste.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

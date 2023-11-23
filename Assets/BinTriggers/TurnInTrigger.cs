@@ -10,13 +10,16 @@ public class TurnInTrigger : MonoBehaviour
     public GameObject GeneralMessage;
     public GameObject RecSpecificMessage;
     ParticleSystem sprinkles;
-    public float coltimer = 3;
+    public GameObject ScriptContainer;
+    private float coltimer = 2;
+    private bool Triggered = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
         sprinkles = GetComponent<ParticleSystem>();
+        ScriptContainer = GameObject.FindWithTag("ScriptContainer_Tag");
     }
 
     void OnTriggerEnter(Collider other)
@@ -27,19 +30,19 @@ public class TurnInTrigger : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
+        if(!Triggered){
             if(coltimer > 0)
                 {
                     coltimer -= Time.deltaTime;
                 }
         
             else
-                {
-                    coltimer = 0;
+                {  
+                    Triggered = true;
 
                     if(other.GetComponent<CustomTag>().HasTag("Chem") || other.GetComponent<CustomTag>().HasTag("Deposit") || other.GetComponent<CustomTag>().HasTag("PlateGlass"))
                     {
-                        Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
-                        sprinkles.Play();
+                        ScriptContainer.GetComponent<GoodBad>().CorrectAttempt(sprinkles);
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("General"))
                     {
@@ -50,12 +53,13 @@ public class TurnInTrigger : MonoBehaviour
                         Instantiate(RecSpecificMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
                 }
-
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        coltimer = 3;
+        coltimer = 2;
+        Triggered = false;
     }
 
     void Update()

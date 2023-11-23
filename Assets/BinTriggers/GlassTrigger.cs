@@ -14,13 +14,16 @@ public class GlassTrigger : MonoBehaviour
     public GameObject RecOtherBinMessage;
     public GameObject NonRecMessage;
     ParticleSystem sprinkles;
-    public float coltimer = 3;
+    public GameObject ScriptContainer;
+    private float coltimer = 2;
+    private bool Triggered = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
         sprinkles = GetComponent<ParticleSystem>();
+        ScriptContainer = GameObject.FindWithTag("ScriptContainer_Tag");
     }
 
     void OnTriggerEnter(Collider other)
@@ -31,6 +34,9 @@ public class GlassTrigger : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
+        if(!Triggered){
+
+
             if(coltimer > 0)
                 {
                     coltimer -= Time.deltaTime;
@@ -38,12 +44,13 @@ public class GlassTrigger : MonoBehaviour
         
             else
                 {
-                    coltimer = 0;
+                    Triggered = true;
 
                     if(other.GetComponent<CustomTag>().HasTag("Glass"))
                     {
-                        Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
-                        sprinkles.Play();
+                        //Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //sprinkles.Play();
+                        ScriptContainer.GetComponent<GoodBad>().CorrectAttempt(sprinkles);
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
@@ -70,12 +77,13 @@ public class GlassTrigger : MonoBehaviour
                         Instantiate(PlateMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
                 }
-
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        coltimer = 3;
+        coltimer = 2;
+        Triggered = false;
     }
 
     void Update()

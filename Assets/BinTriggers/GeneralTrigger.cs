@@ -9,15 +9,17 @@ public class GeneralTrigger : MonoBehaviour
     public GameObject CorrectMessage;
     public GameObject ChemMessage;
     public GameObject RecyclableMessage;
+    public GameObject ScriptContainer;
     ParticleSystem sprinkles;
-
-    public float coltimer = 3;
+    private float coltimer = 2;
+    private bool Triggered = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
         sprinkles = GetComponent<ParticleSystem>();
+        ScriptContainer = GameObject.FindWithTag("ScriptContainer_Tag");
     }
 
     void OnTriggerEnter(Collider other)
@@ -28,6 +30,7 @@ public class GeneralTrigger : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
+        if(!Triggered){
             if(coltimer > 0)
                 {
                     coltimer -= Time.deltaTime;
@@ -35,12 +38,12 @@ public class GeneralTrigger : MonoBehaviour
         
             else
                 {
+                    Triggered = true;
                     coltimer = 0;
 
-                    if(other.GetComponent<CustomTag>().HasTag("General"))
+                    if(other.GetComponent<CustomTag>().HasTag("General") || other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("Dirty") || other.GetComponent<CustomTag>().HasTag("Propellant") || other.GetComponent<CustomTag>().HasTag("NoFood") || other.GetComponent<CustomTag>().HasTag("NotCompostable"))
                     {
-                        Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
-                        sprinkles.Play();
+                        ScriptContainer.GetComponent<GoodBad>().CorrectAttempt(sprinkles);
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
@@ -52,12 +55,13 @@ public class GeneralTrigger : MonoBehaviour
                     }
                     
                 }
-
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        coltimer = 3;
+        coltimer = 2;
+        Triggered = false;
     }
 
     void Update()

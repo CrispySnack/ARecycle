@@ -13,13 +13,17 @@ public class PMDTrigger : MonoBehaviour
     public GameObject ChemMessage;
     public GameObject RecOtherBinMessage;
     public GameObject NonRecMessage;
-    public float coltimer = 3;
+    ParticleSystem sprinkles;
+    public GameObject ScriptContainer;
+    private float coltimer = 2;
+    private bool Triggered = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        sprinkles = GetComponent<ParticleSystem>();
+        ScriptContainer = GameObject.FindWithTag("ScriptContainer_Tag");
     }
 
     void OnTriggerEnter(Collider other)
@@ -30,6 +34,7 @@ public class PMDTrigger : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
+        if(!Triggered){
             if(coltimer > 0)
                 {
                     coltimer -= Time.deltaTime;
@@ -37,11 +42,12 @@ public class PMDTrigger : MonoBehaviour
         
             else
                 {
+                    Triggered = true;
                     coltimer = 0;
 
-                    if(other.GetComponent<CustomTag>().HasTag("PMD"))
+                    if(other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("PlasticLining"))
                     {
-                        Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
+                        ScriptContainer.GetComponent<GoodBad>().CorrectAttempt(sprinkles);
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
@@ -68,12 +74,13 @@ public class PMDTrigger : MonoBehaviour
                         Instantiate(PropMessage, new Vector3(0,0,0), Quaternion.identity);
                     }
                 }
-
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        coltimer = 3;
+        coltimer = 2;
+        Triggered = false;
     }
 
     void Update()

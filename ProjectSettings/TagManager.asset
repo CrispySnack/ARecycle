@@ -11,6 +11,7 @@ TagManager:
   - GFT
   - Rest
   - Inlever
+  - ScriptContainer_Tag
   layers:
   - Default
   - TransparentFX

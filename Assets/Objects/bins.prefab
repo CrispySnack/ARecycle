@@ -230,11 +230,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CorrectMessage: {fileID: 4647350076870867512, guid: 3bcd71e77d699b34b83cf4da2103c5c3,
     type: 3}
-  GeneralMessage: {fileID: 998945960523931908, guid: 43e2bebd8da277c4ba5a9192394228e4,
+  GeneralMessage: {fileID: 998945960523931908, guid: 937e017af5398b6439feba0c570474f0,
     type: 3}
   RecSpecificMessage: {fileID: 998945960523931908, guid: 8f7b67da9985bc84e9440ff4985ec1f2,
     type: 3}
-  coltimer: 3
+  coltimer: 2
 --- !u!199 &7003224614777721442
 ParticleSystemRenderer:
   serializedVersion: 6

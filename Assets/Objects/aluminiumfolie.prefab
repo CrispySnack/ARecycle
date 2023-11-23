@@ -120,7 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - PMD
-  - PlasticLining
 --- !u!1 &6629144731749733528
 GameObject:
   m_ObjectHideFlags: 0
@@ -131,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4739301222257781020}
   m_Layer: 0
-  m_Name: waste6
+  m_Name: aluminiumfolie
   m_TagString: Waste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

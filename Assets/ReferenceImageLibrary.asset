@@ -35,7 +35,7 @@ MonoBehaviour:
       m_GuidHigh: 12941819946018934954
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste1
+    m_Name: koffiepad
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5071896723043682205
@@ -45,7 +45,7 @@ MonoBehaviour:
       m_GuidHigh: 7555939782475269866
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste2
+    m_Name: tijdschrift
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 4777119410242996435
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_GuidHigh: 1900353582045507529
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste3
+    m_Name: deobus
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 4761218092341152429
@@ -65,7 +65,7 @@ MonoBehaviour:
       m_GuidHigh: 15618113913251984729
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste4
+    m_Name: blikjecola
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5698339808745523572
@@ -75,7 +75,7 @@ MonoBehaviour:
       m_GuidHigh: 7315889918666163913
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste5
+    m_Name: wijnglas
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5071253522514642377
@@ -85,7 +85,7 @@ MonoBehaviour:
       m_GuidHigh: 3479875902579184904
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste6
+    m_Name: koffiebeker
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5590963822266255541
@@ -95,5 +95,5 @@ MonoBehaviour:
       m_GuidHigh: 15984806119359969707
     m_Size: {x: 0.4233, y: 0.4233}
     m_SpecifySize: 1
-    m_Name: waste7
+    m_Name: nagellak
     m_Texture: {fileID: 0}
