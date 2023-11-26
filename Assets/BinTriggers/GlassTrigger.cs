@@ -13,6 +13,10 @@ public class GlassTrigger : MonoBehaviour
     public GameObject ChemMessage;
     public GameObject RecOtherBinMessage;
     public GameObject NonRecMessage;
+    public GameObject PropMessage;
+    public string DecidedMessage;
+    public bool isCorrect;
+
     ParticleSystem sprinkles;
     public GameObject ScriptContainer;
     private float coltimer = 2;
@@ -34,7 +38,8 @@ public class GlassTrigger : MonoBehaviour
     // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
-        if(!Triggered){
+        if(!Triggered)
+        {
 
 
             if(coltimer > 0)
@@ -45,37 +50,59 @@ public class GlassTrigger : MonoBehaviour
             else
                 {
                     Triggered = true;
+                    string itemName = other.transform.parent.gameObject.name.Replace("(Clone)","");
 
                     if(other.GetComponent<CustomTag>().HasTag("Glass"))
                     {
-                        //Instantiate(CorrectMessage, new Vector3(0,0,0), Quaternion.identity);
-                        //sprinkles.Play();
-                        ScriptContainer.GetComponent<GoodBad>().CorrectAttempt(sprinkles);
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
-                        Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
+                        // Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "ChemMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Electronics"))
                     {
-                        Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
+                        // Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "RecOtherBinMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("General"))
                     {
-                        Instantiate(NonRecMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(NonRecMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "NonRecMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("NoFood"))
                     {
-                        Instantiate(NoFoodMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(NoFoodMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "NoFoodMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Deposit"))
                     {
-                        Instantiate(DepositMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(DepositMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "DepositMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("PlateGlass"))
                     {
-                        Instantiate(PlateMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(PlateMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "PlateMessage";
                     }
+                    else if(other.GetComponent<CustomTag>().HasTag("Propellant"))
+                    {
+                        //Instantiate(NoRipMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "PropMessage";
+                    }
+
+
+                    ScriptContainer.GetComponent<GoodBad>().putInBin(itemName, "Glass", isCorrect, sprinkles, DecidedMessage);
+                    
                 }
         }
     }
@@ -88,34 +115,7 @@ public class GlassTrigger : MonoBehaviour
 
     void Update()
     {
-        // Timer for correct/wrong
-        /* if(IsColliding == true)
-        {
-            if(coltimer > 0)
-                {
-                    coltimer -= Time.deltaTime;
-                }
-        
-            else
-                {
-                    coltimer = 0;
-                    IsCorrect = true;
-                }
-        }
-        */
 
-
-/*
-        if(IsCorrect == true)
-        {
-            Instantiate(goodmssg, new Vector3(0,0,0), Quaternion.identity);
-        }
-
-        if(IsWrong == true)
-        {
-            Instantiate(wrongmssg, new Vector3(0,0,0), Quaternion.identity);
-        }
-        */
     }
 
 }

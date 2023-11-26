@@ -114,6 +114,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: de4da3906a001624fabcc7838ddf2eb4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 419d933c94839a047b6bb285964d7ae1, type: 2}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Name
@@ -234,7 +239,11 @@ MonoBehaviour:
     type: 3}
   RecSpecificMessage: {fileID: 998945960523931908, guid: 8f7b67da9985bc84e9440ff4985ec1f2,
     type: 3}
-  coltimer: 2
+  PropMessage: {fileID: 2399821605573794034, guid: a3974a8fc93749c4ba9e3e6c01859809,
+    type: 3}
+  ScriptContainer: {fileID: 0}
+  DecidedMessage: {fileID: 0}
+  isCorrect: 0
 --- !u!199 &7003224614777721442
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5112,7 +5121,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 83dfbf8af238f7a4a954d51f9652b34a, type: 2}
+      objectReference: {fileID: 2100000, guid: b44741ce8cbf7ca4484037efff18d09d, type: 2}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Name
@@ -5241,7 +5250,11 @@ MonoBehaviour:
     type: 3}
   NoRipMessage: {fileID: 998945960523931908, guid: 41e70a0fd2222e243acf883097139878,
     type: 3}
-  coltimer: 3
+  PropMessage: {fileID: 2399821605573794034, guid: a3974a8fc93749c4ba9e3e6c01859809,
+    type: 3}
+  ScriptContainer: {fileID: 0}
+  DecidedMessage: {fileID: 0}
+  isCorrect: 0
 --- !u!198 &679744596748595738
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -10119,7 +10132,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 066ce8ef51b0c9546a68d59fc00a87e4, type: 2}
+      objectReference: {fileID: 2100000, guid: 35e97583fe304aa458adc201aa8e50c6, type: 2}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Icon
@@ -10258,7 +10271,9 @@ MonoBehaviour:
     type: 3}
   NonRecMessage: {fileID: 998945960523931908, guid: d24e222f46b4c574dac711af32ae2869,
     type: 3}
-  coltimer: 3
+  ScriptContainer: {fileID: 0}
+  DecidedMessage: {fileID: 0}
+  isCorrect: 0
 --- !u!199 &6160331806069497103
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -15117,6 +15132,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: de4da3906a001624fabcc7838ddf2eb4,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: de4da3906a001624fabcc7838ddf2eb4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 42b089db1bdfa4e46ae9186d14963632, type: 2}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Name
@@ -15239,7 +15264,11 @@ MonoBehaviour:
     type: 3}
   NonRecMessage: {fileID: 998945960523931908, guid: d24e222f46b4c574dac711af32ae2869,
     type: 3}
-  coltimer: 3
+  PropMessage: {fileID: 2399821605573794034, guid: a3974a8fc93749c4ba9e3e6c01859809,
+    type: 3}
+  DecidedMessage: {fileID: 0}
+  isCorrect: 0
+  ScriptContainer: {fileID: 0}
 --- !u!199 &4394938852140630299
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -20108,7 +20137,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 98662349449c41a4f8bd81b6b390105d, type: 2}
+      objectReference: {fileID: 2100000, guid: 2522f737eba47624a99da227f7c1a5f1, type: 2}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Name
@@ -20223,7 +20252,9 @@ MonoBehaviour:
     type: 3}
   RecyclableMessage: {fileID: 998945960523931908, guid: 8f7b67da9985bc84e9440ff4985ec1f2,
     type: 3}
-  coltimer: 3
+  ScriptContainer: {fileID: 0}
+  DecidedMessage: {fileID: 0}
+  isCorrect: 0
 --- !u!199 &8633418817593777791
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -25092,7 +25123,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8383c6a925c3aea41a48964a5b6f1eee, type: 2}
+      objectReference: {fileID: 2100000, guid: 461ca8006dccd3b41aca2421b0b2d9ac, type: 2}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Name
@@ -25211,7 +25242,11 @@ MonoBehaviour:
     type: 3}
   NonRecMessage: {fileID: 998945960523931908, guid: d24e222f46b4c574dac711af32ae2869,
     type: 3}
-  coltimer: 3
+  PropMessage: {fileID: 2399821605573794034, guid: a3974a8fc93749c4ba9e3e6c01859809,
+    type: 3}
+  ScriptContainer: {fileID: 0}
+  DecidedMessage: {fileID: 0}
+  isCorrect: 0
 --- !u!199 &4974788355360954534
 ParticleSystemRenderer:
   serializedVersion: 6

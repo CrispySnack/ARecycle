@@ -12,6 +12,7 @@ TagManager:
   - Rest
   - Inlever
   - ScriptContainer_Tag
+  - TutorialUI_Tag
   layers:
   - Default
   - TransparentFX

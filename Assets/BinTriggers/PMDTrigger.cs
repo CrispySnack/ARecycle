@@ -17,6 +17,8 @@ public class PMDTrigger : MonoBehaviour
     public GameObject ScriptContainer;
     private float coltimer = 2;
     private bool Triggered = false;
+    public string DecidedMessage;
+    public bool isCorrect;
 
 
     // Start is called before the first frame update
@@ -43,36 +45,51 @@ public class PMDTrigger : MonoBehaviour
             else
                 {
                     Triggered = true;
-                    coltimer = 0;
+                    string itemName = other.transform.parent.gameObject.name.Replace("(Clone)","");
 
                     if(other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("PlasticLining"))
                     {
-                        ScriptContainer.GetComponent<GoodBad>().CorrectAttempt(sprinkles);
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
-                        Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(ChemMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "ChemMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics"))
                     {
-                        Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "RecOtherBinMessage";
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("General"))
+                    else if(other.GetComponent<CustomTag>().HasTag("General") || other.GetComponent<CustomTag>().HasTag("NoFood"))
                     {
-                        Instantiate(NonRecMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(NonRecMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "NonRecMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Dirty"))
                     {
-                        Instantiate(DirtyMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(DirtyMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "DirtyMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Deposit"))
                     {
-                        Instantiate(DepositMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(DepositMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "DepositMessage";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Propellant"))
                     {
-                        Instantiate(PropMessage, new Vector3(0,0,0), Quaternion.identity);
+                        //Instantiate(PropMessage, new Vector3(0,0,0), Quaternion.identity);
+                        isCorrect = false;
+                        DecidedMessage = "PropMessage";
                     }
+
+                    ScriptContainer.GetComponent<GoodBad>().putInBin(itemName, "PMD", isCorrect, sprinkles, DecidedMessage);
                 }
         }
     }

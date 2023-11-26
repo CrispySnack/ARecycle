@@ -14,6 +14,9 @@ public class PlaceTrackedImages : MonoBehaviour {
     // as their corresponding 2D images in the reference image library 
     public GameObject[] ArPrefabs;
 
+    //Reference to the TutorialUIscript
+    public GameObject TutorialCanvas;
+
     // Keep dicationary array of created prefabs
     private readonly Dictionary<string, GameObject> _instantiatedPrefabs = new Dictionary<string, GameObject>();
     void Awake()
@@ -23,6 +26,9 @@ public class PlaceTrackedImages : MonoBehaviour {
     private void OnEnable()
     {
         _trackedImagesManager.trackedImagesChanged += OnTrackedImagesChanged;
+
+        //Look for the UIscript
+        TutorialCanvas = GameObject.FindWithTag("TutorialUI_Tag");
     }
 
     private void OnDisable()
@@ -55,6 +61,15 @@ public class PlaceTrackedImages : MonoBehaviour {
         // on whether their corresponding image is currently being tracked
         foreach (var trackedImage in eventArgs.updated)
         {   
+            if(trackedImage.referenceImage.name == "bins")
+            {
+                TutorialCanvas.GetComponent<UIscript>().lookingAtBins();
+            }
+            else if(trackedImage.referenceImage.name == "tutorialitem")
+            {
+                TutorialCanvas.GetComponent<UIscript>().lookingAtTutItem();
+            }
+
             if(trackedImage.referenceImage.name != "bins")
             {
             _instantiatedPrefabs[trackedImage.referenceImage.name]
