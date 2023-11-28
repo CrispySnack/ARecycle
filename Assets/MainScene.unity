@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -848,8 +848,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Let's practice! Hold the phone using your weaker hand. Point the camera
-    at the tag above the bins and see what happens!
+  m_text: Let's practice! Hold the phone using your non-dominant hand. Point the
+    camera at the tag above the bins and see what happens!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1136,6 +1136,7 @@ GameObject:
   - component: {fileID: 498745025}
   - component: {fileID: 498745027}
   - component: {fileID: 498745026}
+  - component: {fileID: 498745028}
   m_Layer: 5
   m_Name: FeedbackText
   m_TagString: Untagged
@@ -1260,6 +1261,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498745024}
   m_CullTransparentMesh: 1
+--- !u!114 &498745028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498745024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae97f28cca2b5d42afef5c38bac2a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &513806495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,7 +1933,7 @@ GameObject:
   - component: {fileID: 782628383}
   m_Layer: 0
   m_Name: XR Origin
-  m_TagString: Untagged
+  m_TagString: Origin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1938,7 +1951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArPrefabs:
-  - {fileID: 6686391754347583313, guid: 0a84fa6aab182384fa77c9106eaef60f, type: 3}
+  - {fileID: 48524955201008085, guid: 1ac1d3971b3504e40a47b6df1ba761ec, type: 3}
   - {fileID: 6629144731749733528, guid: 776899f7ce9dfb142a98ff38c163821c, type: 3}
   - {fileID: 6629144731749733528, guid: 3515dcb0e0d6d2b48a81040a97b84d9d, type: 3}
   - {fileID: 6629144731749733528, guid: 7723853492607124eb73e9b8fc8955f6, type: 3}
@@ -3234,7 +3247,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now hold the item marker over a bin marker for 2 seconds. Choose which
+  m_text: 'Now hold the item marker against a bin marker for 2 seconds. Choose which
     bin you think is most appropriate for the object to go into. Don''t worry about
     getting it right, you''ll get feedback!
 
@@ -3828,8 +3841,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Turns out you put in the wrong bin. You should see a message as to why
-    it's the wrong bin. Try again!
+  m_text: Turns out you put the object in the wrong bin. You should see a message
+    as to why it's the wrong bin. Try again!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4308,6 +4321,7 @@ MonoBehaviour:
   usedObjects: []
   TutorialCanvas: {fileID: 0}
   FeedbackTextBox: {fileID: 498745024}
+  FeedbackText: 
 --- !u!4 &1821563137
 Transform:
   m_ObjectHideFlags: 0
@@ -4868,8 +4882,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hello! This application is meant to teach you a few things about correctly
-    separating waste. You will be throwing away 12 waste objects using this application. '
+  m_text: Hello! This application is meant to teach you a few things about correctly
+    separating waste. You will throwing away 12 waste objects using this application.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
