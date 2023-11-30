@@ -119,7 +119,7 @@ public class UIscript : MonoBehaviour
 
     public void tutInBin(bool isCorrect)
     {
-        if(CurrentPage == 6)
+        if(CurrentPage == 6 || CurrentPage == 72)
         {
 
             FeedbackPanel.SetActive(true);

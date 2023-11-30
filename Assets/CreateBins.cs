@@ -10,7 +10,7 @@ public class CreateBins : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       var instance = Instantiate(bins, new Vector3(0,0,2), Quaternion.identity);
+      Instantiate(bins, new Vector3(0,0,2), Quaternion.identity);
     }
 
     // Update is called once per frame

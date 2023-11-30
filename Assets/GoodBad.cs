@@ -53,8 +53,10 @@ public class GoodBad : MonoBehaviour
     public void putInBin(string itemName, string binName, bool isCorrect, ParticleSystem sprinkles, string messageType)
     {
         
-
+    
         string FeedbackText = FeedbackTextLookup(messageType);
+        
+
         FeedbackTextBox.GetComponent<TMP_Text>().text = FeedbackText;
 
 
