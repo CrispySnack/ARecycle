@@ -18,7 +18,10 @@ public class GoodBad : MonoBehaviour
     public List<string> usedObjects =  new List<string>();
     public GameObject TutorialCanvas;
     public GameObject FeedbackTextBox;
+    public GameObject FeedbackPanel;
 
+    //set feedback creation time
+    public DateTime FeedbackPanelBirth;
 
 
     // Start is called before the first frame update
@@ -32,6 +35,13 @@ public class GoodBad : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check if feedbackbirth - currenttime > 10{set inactive feedbackpanel}
+        DateTime currentTime = System.DateTime.UtcNow;
+
+        if((currentTime - FeedbackPanelBirth).TotalSeconds > 6)
+        {
+            FeedbackPanel.SetActive(false);
+        }
         
     }
 
@@ -55,9 +65,15 @@ public class GoodBad : MonoBehaviour
         
     
         string FeedbackText = FeedbackTextLookup(messageType);
-        
+    
 
         FeedbackTextBox.GetComponent<TMP_Text>().text = FeedbackText;
+
+        FeedbackPanel.SetActive(true);
+
+        FeedbackPanelBirth = System.DateTime.UtcNow;
+
+
 
 
         //Show Message

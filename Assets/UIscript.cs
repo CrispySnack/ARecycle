@@ -122,7 +122,7 @@ public class UIscript : MonoBehaviour
         if(CurrentPage == 6 || CurrentPage == 72)
         {
 
-            FeedbackPanel.SetActive(true);
+            // FeedbackPanel.SetActive(true);
             
             if(isCorrect)
             {
