@@ -11,12 +11,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
@@ -36,12 +36,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
@@ -91,7 +91,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       propertyPath: m_Name
-      value: PMD Variant
+      value: PMDbin
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
@@ -117,23 +117,23 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7575536274835097600}
+      addedObject: {fileID: 119}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6409213332182126024}
+      addedObject: {fileID: 120}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2884046276438694607}
+      addedObject: {fileID: 183}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7437234973553608461}
+      addedObject: {fileID: 135}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: de4da3906a001624fabcc7838ddf2eb4,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2481538825422573673}
+      addedObject: {fileID: 134}
   m_SourcePrefab: {fileID: 100100000, guid: de4da3906a001624fabcc7838ddf2eb4, type: 3}
 --- !u!1 &48524955201008085 stripped
 GameObject:
@@ -141,7 +141,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 895386063192870020}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &7575536274835097600
+--- !u!54 &119
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +168,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6409213332182126024
+--- !u!65 &120
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,7 +189,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2884046276438694607
+--- !u!114 &183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,7 +218,7 @@ MonoBehaviour:
   ScriptContainer: {fileID: 0}
   DecidedMessage: 
   isCorrect: 0
---- !u!199 &7437234973553608461
+--- !u!199 &135
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -290,7 +290,7 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!198 &2481538825422573673
+--- !u!198 &134
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

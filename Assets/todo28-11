@@ -1,0 +1,32 @@
+To do 28/11:
+
+Mails:
+DONE- Send mail to Christof -> respond with yes and working title 
+DONE- Send mail to studieadviseur -> vraag advies qua uitstel wegens mentale problemen
+DONE- Send mail to Nina -> respond
+
+Testing:
+SOORT VAN DONE - ZIE MAIL NINA Congruency vraag aanpassen zodat het 'binnen de universiteit' is
+THUIS -Kijken naar andere papers hoeveel participants gebruikelijk is (liefst met significant verschil)
+
+Applicatie:
+DONE -Text van tutorial aanpassen
+DONE -Correct/Incorrect messages wegspoelen na een tijdje
+-QR markers fixen (Nieuwe maken met meer verschillen)
+-Bin markers/objecten aanpassen
+	-change bins to single bin objects
+	-Bin markers muuuuuuch bigger (fit to A4 width?)
+
+Word like (due to limitation of <30cm marker detection range):
+Separate bin markers for 6 different bins
+Have participants 'walk up to' the bins, and 'scan' individual bin markers
+
+
+
+
+
+ISSUES 01/12:
+
+3D space collision thing (depth issue) <--- try changes the sizes of markers in unity
+Other bins need adding separately (same mesh/size of in-game object)
+Tutorial change based on new bin system
