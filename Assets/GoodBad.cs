@@ -107,22 +107,25 @@ public class GoodBad : MonoBehaviour
 
             if(isCorrect)
             {
-                //add object to list of used objects
-                usedObjects.Add(itemName);
-
                 //Display fireworks
                 sprinkles.Play();
 
-                //Add to score
-                Score = Score+1;
-
-                //Update the score text
-                ScoreText.SetText("Score: " + Score.ToString());
-
-                if(usedObjects.Count == 13)
+                if(itemName != "tutorialitem")
                 {
-                    TutorialCanvas.SetActive(true);
-                    EndPage.SetActive(true);
+                    //add object to list of used objects
+                    usedObjects.Add(itemName);
+
+                    //Add to score
+                    Score = Score+1;
+
+                    //Update the score text
+                    ScoreText.SetText("Score: " + Score.ToString());
+
+                    if(usedObjects.Count == 12)
+                    {
+                        TutorialCanvas.SetActive(true);
+                        EndPage.SetActive(true);
+                    }
                 }
             }
         }

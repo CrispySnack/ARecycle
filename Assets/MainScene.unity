@@ -850,7 +850,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Let's practice! Hold the phone using your non-dominant hand. Point the
-    camera at the tag above the bins and see what happens!
+    camera at the tag above one of the bins and see what happens!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1945,19 +1945,19 @@ MonoBehaviour:
   - {fileID: 2714280261719514459, guid: 7fbb0c5df2d8fb64f884a184973d2ba8, type: 3}
   - {fileID: 7779049736254647701, guid: ce56281f7c5439a4c8d24674baff7dcd, type: 3}
   - {fileID: 1818580235748285937, guid: 5c8a94b231af78b4197c8c21ebf97be3, type: 3}
-  - {fileID: 6629144731749733528, guid: 776899f7ce9dfb142a98ff38c163821c, type: 3}
-  - {fileID: 6629144731749733528, guid: 3515dcb0e0d6d2b48a81040a97b84d9d, type: 3}
-  - {fileID: 6629144731749733528, guid: 7723853492607124eb73e9b8fc8955f6, type: 3}
-  - {fileID: 6629144731749733528, guid: aebb7c609585cf044b67aeddf28bf621, type: 3}
-  - {fileID: 6629144731749733528, guid: 304f73ceb4cdd7645af9bc361dbbb0c2, type: 3}
-  - {fileID: 6629144731749733528, guid: 9720d7c807f081c43a9ff3fa6c353bd4, type: 3}
-  - {fileID: 6629144731749733528, guid: b80044917e539db498e4b4d104c15e7c, type: 3}
-  - {fileID: 6629144731749733528, guid: 769d87094e436fe4189771c35d63e1b7, type: 3}
-  - {fileID: 6629144731749733528, guid: bf6323418c76c9b409d1a72215452dca, type: 3}
-  - {fileID: 6629144731749733528, guid: b639f969cbd006d4bb7d5880f91956a1, type: 3}
-  - {fileID: 6629144731749733528, guid: dc53f2ca07a05104aa80aa1318183e4d, type: 3}
-  - {fileID: 6629144731749733528, guid: aa8479e3f68577346a2aa55917e9b05c, type: 3}
-  - {fileID: 6629144731749733528, guid: 16d253ff43e41f5409f6c0d4962ffa8c, type: 3}
+  - {fileID: 2710379289037274033, guid: bf6323418c76c9b409d1a72215452dca, type: 3}
+  - {fileID: 6631787324081869013, guid: aebb7c609585cf044b67aeddf28bf621, type: 3}
+  - {fileID: 2198121699416752094, guid: 7723853492607124eb73e9b8fc8955f6, type: 3}
+  - {fileID: 1972894227431876126, guid: 304f73ceb4cdd7645af9bc361dbbb0c2, type: 3}
+  - {fileID: 6274504190348464716, guid: b80044917e539db498e4b4d104c15e7c, type: 3}
+  - {fileID: 7786455066340582621, guid: aa8479e3f68577346a2aa55917e9b05c, type: 3}
+  - {fileID: 7707217583992335743, guid: 9720d7c807f081c43a9ff3fa6c353bd4, type: 3}
+  - {fileID: 1694991465932103084, guid: b639f969cbd006d4bb7d5880f91956a1, type: 3}
+  - {fileID: 8215143564997265896, guid: 769d87094e436fe4189771c35d63e1b7, type: 3}
+  - {fileID: 1124348209875802052, guid: 776899f7ce9dfb142a98ff38c163821c, type: 3}
+  - {fileID: 4650516085572779106, guid: 3515dcb0e0d6d2b48a81040a97b84d9d, type: 3}
+  - {fileID: 4206362348349440074, guid: dc53f2ca07a05104aa80aa1318183e4d, type: 3}
+  - {fileID: 446497286452617344, guid: 16d253ff43e41f5409f6c0d4962ffa8c, type: 3}
   TutorialCanvas: {fileID: 0}
   binNames:
   - PMDbin
@@ -3382,7 +3382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now hold the item marker against a bin marker for 2 seconds. Choose which
+  m_text: 'Now hold the item marker below a bin marker for 2 seconds. Choose which
     bin you think is most appropriate for the object to go into. Don''t worry about
     getting it right, you''ll get feedback!
 
@@ -4959,8 +4959,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nice! You should now see the cubes above the bins. These are the bin markers,
-    more about those later.
+  m_text: Nice! You should now see the platform below the bin. These are the bin
+    markers, more about those later.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
