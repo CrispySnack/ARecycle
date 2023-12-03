@@ -19,6 +19,11 @@ public class PlaceTrackedImages : MonoBehaviour {
 
     // Keep dicationary array of created prefabs
     private readonly Dictionary<string, GameObject> _instantiatedPrefabs = new Dictionary<string, GameObject>();
+
+    //List of bins
+    public List<string> binNames =  new List<string>{"PMDbin","Generalbin","Inleverbin","Paperbin","Glassbin","GFTbin"};
+
+
     void Awake()
     {
         _trackedImagesManager = GetComponent<ARTrackedImageManager>();
@@ -61,7 +66,7 @@ public class PlaceTrackedImages : MonoBehaviour {
         // on whether their corresponding image is currently being tracked
         foreach (var trackedImage in eventArgs.updated)
         {   
-            if(trackedImage.referenceImage.name == "bins")
+            if(binNames.Contains(trackedImage.referenceImage.name))
             {
                 TutorialCanvas.GetComponent<UIscript>().lookingAtBins();
             }
@@ -70,25 +75,25 @@ public class PlaceTrackedImages : MonoBehaviour {
                 TutorialCanvas.GetComponent<UIscript>().lookingAtTutItem();
             }
 
-            if(trackedImage.referenceImage.name != "bins")
-            {
+            //if(!binNames.Contains(trackedImage.referenceImage.name))
+            //{
             _instantiatedPrefabs[trackedImage.referenceImage.name]
                 .SetActive(trackedImage.trackingState == TrackingState.Tracking);
-            }   
+            //}   
         }
 
         // If the AR Subsystem has given up looking for a tracked image
         foreach (var trackedImage in eventArgs.removed)
         {
-            if(trackedImage.referenceImage.name != "bins")
-            {
+             //if(!binNames.Contains(trackedImage.referenceImage.name))
+            //{
             // Destroy its prefab
             Destroy(_instantiatedPrefabs[trackedImage.referenceImage.name]);
             // Also remove the instance from our array
             _instantiatedPrefabs.Remove(trackedImage.referenceImage.name);
             // Or, simply set the prefab instance to inactive
             _instantiatedPrefabs[trackedImage.referenceImage.name].SetActive(false);
-            }
+            //}
         }
 
     }
