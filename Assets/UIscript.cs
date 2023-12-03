@@ -84,6 +84,7 @@ public class UIscript : MonoBehaviour
     public void Button8Press()
     {
         TutPanel.SetActive(false);
+        Tutpage8.SetActive(false);
         ScriptContainer.GetComponent<GoodBad>().NewSession();
     }
 

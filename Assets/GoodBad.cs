@@ -19,6 +19,7 @@ public class GoodBad : MonoBehaviour
     public GameObject TutorialCanvas;
     public GameObject FeedbackTextBox;
     public GameObject FeedbackPanel;
+    public GameObject EndPage;
 
     //set feedback creation time
     public DateTime FeedbackPanelBirth;
@@ -117,6 +118,12 @@ public class GoodBad : MonoBehaviour
 
                 //Update the score text
                 ScoreText.SetText("Score: " + Score.ToString());
+
+                if(usedObjects.Count == 13)
+                {
+                    TutorialCanvas.SetActive(true);
+                    EndPage.SetActive(true);
+                }
             }
         }
     }
