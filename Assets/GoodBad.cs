@@ -17,6 +17,7 @@ public class GoodBad : MonoBehaviour
     public string resultString = "";
     public List<string> usedObjects =  new List<string>();
     public GameObject TutorialCanvas;
+    public GameObject TutPanel;
     public GameObject FeedbackTextBox;
     public GameObject FeedbackPanel;
     public GameObject EndPage;
@@ -124,6 +125,7 @@ public class GoodBad : MonoBehaviour
                     if(usedObjects.Count == 12)
                     {
                         TutorialCanvas.SetActive(true);
+                        TutPanel.SetActive(true);
                         EndPage.SetActive(true);
                     }
                 }

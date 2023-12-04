@@ -90,6 +90,7 @@ public class UIscript : MonoBehaviour
 
     public void lookingAtBins()
     {
+        // Debug.Log("looking at the bins");
         if(CurrentPage == 2)
         {
             currentTime = System.DateTime.UtcNow;
@@ -104,6 +105,7 @@ public class UIscript : MonoBehaviour
 
     public void lookingAtTutItem()
     {
+        //Debug.Log("looking at the tutorial item");
         if(CurrentPage == 4)
         {
             currentTime = System.DateTime.UtcNow;

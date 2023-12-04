@@ -1,0 +1,64 @@
+to do 03/12:
+
+DONE -Natte tissue, halfvolle fles regelen
+DONE -Put markers on items
+-koffiebeker regelen
+
+DONE -Congruency vraag vanuit Nina's mail veranderen in Qualtrics
+	DONE -Qualtrics opnieuw publishen
+
+
+-Papers kijken naar participant hoeveelheid
+
+DONE -Make experiment schedule
+DONE -Schrijf call to participants
+DONE -Extension aanvragen 
+
+
+applicatie:
+DONE -Applicatie afsluiten of prompt geven als 12 items gedaan zijn
+DONE -Other bins need adding separately (same mesh/size of in-game object)
+DONE -Tutorial change based on new bin system
+DONE -Aangeven welke bin welke is
+
+DONE -fix sprinkles
+KINDA DONE -fix depth issue met objecten
+DONE -change tutorial texts
+
+
+mention size/depth perception as limitation
+
+
+UNINSTALL APP BEFORE REBUILDING
+-
+CAREFUL NOT TO LOSE DATA!!
+
+
+Individual cases:
+
+Ijslolliestokje in turn-in (noncompostable)
+mayonnaise in paper (zegt dat het paper bevat)
+blikje cola in glas (zegt correct material)
+natte tissue in glas
+fles mayo doet vreemd
+
+
+
+
+if things are weird change placetrackedimages back to if bin statements
+
+below -> above - DONE
+instructies duidelijker -> boven houden, noem de 30cm en dat beide tags in beeld moeten zijn
+bounds checken met if statement voor collision & pillar box collider minder dik maken <-- maak collision tijd groter DONE(collision tijd 1sec->2sec) (NEEDS TESTING)
+Instructor endtekst op goede positie - DONE (NEEDS TESTING)
+Tekst met font en kleur op de bin tags - DONE
+
+natte tissue mogelijk vervangen met een vies taartdoosje
+Experimentperiode aangeven in call tekst
+Posters maken
+Koekjes regelen
+Excel sheet maken voor naam/email van participants voor uitreiking
+add tutorial page for extra instructions (30cm and having both on-screen)
+
+
+Begaande grond BBG voor posters, Ruppert, BBG -> KBG ingang, Minnaert learning plaza, KBG liften, 2de verdieping
