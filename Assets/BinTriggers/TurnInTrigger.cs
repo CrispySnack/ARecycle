@@ -49,13 +49,13 @@ public class TurnInTrigger : MonoBehaviour
                         isCorrect = true;
                         DecidedMessage = "CorrectMessage";
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("General") || other.GetComponent<CustomTag>().HasTag("NoFood"))
+                    else if(other.GetComponent<CustomTag>().HasTag("General") || other.GetComponent<CustomTag>().HasTag("NoFood") || other.GetComponent<CustomTag>().HasTag("Dirty"))
                     {
                         //Instantiate(GeneralMessage, new Vector3(0,0,0), Quaternion.identity);
                         isCorrect = false;
                         DecidedMessage = "GeneralMessage";
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass"))
+                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("NotCompostable"))
                     {
                         //Instantiate(RecSpecificMessage, new Vector3(0,0,0), Quaternion.identity);
                         isCorrect = false;

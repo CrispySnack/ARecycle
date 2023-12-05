@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -434,6 +434,7 @@ RectTransform:
   - {fileID: 1216224094}
   - {fileID: 193001917}
   - {fileID: 835659023}
+  - {fileID: 1790650083}
   m_Father: {fileID: 1798473886}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -848,8 +849,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Let's practice! Hold the phone using your non-dominant hand. Point the
-    camera at the tag above one of the bins and see what happens!
+  m_text: Let's practice! Hold the phone and point the camera at the tag above one
+    of the bins and see what happens!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1441,7 +1442,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Now, pick up the [tutorial item]. It should have a tag attached to it.
-    Point the camera at the tag and see what happens.
+    Point the camera at the tag and see what happens. If nothing shows up, hold the
+    item closer to the camera.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3381,7 +3383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now hold the item marker below a bin marker for a second. Choose which
+  m_text: 'Now hold the item marker over a bin marker for a second. Choose which
     bin you think is most appropriate for the object to go into. Don''t worry about
     getting it right, you''ll get feedback!
 
@@ -4308,13 +4310,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1285109061}
-  m_Father: {fileID: 1798473886}
+  m_Father: {fileID: 118345722}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2, y: 80}
-  m_SizeDelta: {x: -912, y: -69}
+  m_AnchoredPosition: {x: -2, y: 720.5}
+  m_SizeDelta: {x: -912, y: 1201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790650084
 MonoBehaviour:
@@ -4453,7 +4455,6 @@ RectTransform:
   - {fileID: 1574016398}
   - {fileID: 118345722}
   - {fileID: 1120976535}
-  - {fileID: 1790650083}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4532,6 +4533,7 @@ MonoBehaviour:
   resultString: 
   usedObjects: []
   TutorialCanvas: {fileID: 0}
+  TutPanel: {fileID: 0}
   FeedbackTextBox: {fileID: 498745024}
   FeedbackPanel: {fileID: 1120976534}
   EndPage: {fileID: 1790650082}
@@ -4960,7 +4962,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Nice! You should now see the platform below the bin. These are the bin
-    markers, more about those later.
+    markers. When you throw away your items, make sure to keep the bin tag on camera.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

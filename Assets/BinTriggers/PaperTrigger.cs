@@ -59,7 +59,7 @@ public class PaperTrigger : MonoBehaviour
                         isCorrect = false;
                         DecidedMessage = "ChemMessage";
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics") || other.GetComponent<CustomTag>().HasTag("Deposit"))
+                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Electronics") || other.GetComponent<CustomTag>().HasTag("Deposit") || other.GetComponent<CustomTag>().HasTag("Dirty") || other.GetComponent<CustomTag>().HasTag("NotCompostable"))
                     {
                         //Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
                         isCorrect = false;

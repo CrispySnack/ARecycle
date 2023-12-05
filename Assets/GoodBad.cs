@@ -157,7 +157,7 @@ public class GoodBad : MonoBehaviour
         }
         else if(messageType == "DepositMessage")
         {
-            return "Incorrect! The object contains the correct materials but has a deposit on it.";
+            return "Incorrect! The object has a deposit on it.";
         }
         else if(messageType == "PlateMessage")
         {
@@ -201,7 +201,7 @@ public class GoodBad : MonoBehaviour
         }
         else
         {
-            return "Incorrect!!!!!";
+            return "Incorrect!";
         }
 
     }

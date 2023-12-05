@@ -63,7 +63,7 @@ public class GlassTrigger : MonoBehaviour
                         isCorrect = false;
                         DecidedMessage = "ChemMessage";
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Electronics"))
+                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Electronics") || other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("Dirty") || other.GetComponent<CustomTag>().HasTag("NotCompostable"))
                     {
                         // Instantiate(RecOtherBinMessage, new Vector3(0,0,0), Quaternion.identity);
                         isCorrect = false;
