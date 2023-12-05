@@ -55,7 +55,7 @@ public class TurnInTrigger : MonoBehaviour
                         isCorrect = false;
                         DecidedMessage = "GeneralMessage";
                     }
-                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("NotCompostable"))
+                    else if(other.GetComponent<CustomTag>().HasTag("GFT") || other.GetComponent<CustomTag>().HasTag("Paper") || other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("Glass") || other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("NotCompostable") || other.GetComponent<CustomTag>().HasTag("PlasticLining"))
                     {
                         //Instantiate(RecSpecificMessage, new Vector3(0,0,0), Quaternion.identity);
                         isCorrect = false;
