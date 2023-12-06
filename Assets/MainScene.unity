@@ -182,8 +182,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You should now see a little cube in front of the object. This is the item
-    marker. '
+  m_text: You should now see a little cube in front of the object. This is the item
+    marker. Make sure to keep the object no further than ~30cm from the camera.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1441,9 +1441,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Now, pick up the [tutorial item]. It should have a tag attached to it.
-    Point the camera at the tag and see what happens. If nothing shows up, hold the
-    item closer to the camera.
+  m_text: Now pick up the tutorial item, the piece of cardboard. Point the camera
+    at the tag and see what happens. If nothing shows up, hold the item closer to
+    the camera.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3383,9 +3383,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Now hold the item marker over a bin marker for a second. Choose which
-    bin you think is most appropriate for the object to go into. Don''t worry about
-    getting it right, you''ll get feedback!
+  m_text: 'Choose which bin you think is most appropriate for the object. Then hold
+    the item marker over a bin marker for a short while. Make sure to keep both tags
+    on camera. Don''t worry about getting it right, you''ll get feedback!
 
 '
   m_isRightToLeft: 0
@@ -3414,8 +3414,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3978,7 +3978,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Turns out you put the object in the wrong bin. You should see a message
-    as to why it's the wrong bin. Try again!
+    as to why it's the wrong bin above. Try again!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4962,7 +4962,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Nice! You should now see the platform below the bin. These are the bin
-    markers. When you throw away your items, make sure to keep the bin tag on camera.
+    markers. When trying to interact with the bins, make sure to keep the bin tag
+    fully within sight.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
