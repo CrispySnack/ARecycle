@@ -139,6 +139,38 @@ public class GoodBad : MonoBehaviour
         {
             return "Correct! This object belongs in this bin.";
         }
+        else if(messageType == "CorrectMessageDirty")
+        {
+            return "Correct! This object belongs in this bin because it is too wet or dirty to go into a more specific bin.";
+        }
+        else if(messageType == "CorrectMessageProp")
+        {
+            return "Correct! This object belongs in this bin because it contains propellants.";
+        }
+        else if(messageType == "CorrectMessageNoFood")
+        {
+            return "Correct! This object belongs in this bin because it is made of glass that is not easily recycled.";
+        }
+        else if(messageType == "CorrectMessageNotCompostable")
+        {
+            return "Correct! This object belongs in this bin because it is organic material that is not compostable.";
+        }
+        else if(messageType == "CorrectMessagePlasticLining")
+        {
+            return "Correct! This object belongs in this bin because it contains an inner plastic lining.";
+        }
+        else if(messageType == "CorrectMessageDeposit")
+        {
+            return "Correct! This object belongs in this bin because it has a deposit on it.";
+        }
+        else if(messageType == "CorrectMessagePlate")
+        {
+            return "Correct! This object belongs in this bin because it contains plate glass.";
+        }
+        else if(messageType == "CorrectMessageChem")
+        {
+            return "Correct! This object belongs in this bin because it is considered chemical waste.";
+        }
         else if(messageType == "ChemMessage")
         {
             return "Incorrect! This object contains chemical waste and should be thrown away separately, as it could contaminate other waste.";

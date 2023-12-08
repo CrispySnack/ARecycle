@@ -47,10 +47,15 @@ public class PMDTrigger : MonoBehaviour
                     Triggered = true;
                     string itemName = other.transform.parent.gameObject.name.Replace("(Clone)","");
 
-                    if(other.GetComponent<CustomTag>().HasTag("PMD") || other.GetComponent<CustomTag>().HasTag("PlasticLining"))
+                    if(other.GetComponent<CustomTag>().HasTag("PMD"))
                     {
                         isCorrect = true;
                         DecidedMessage = "CorrectMessage";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("PlasticLining"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessagePlasticLining";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {

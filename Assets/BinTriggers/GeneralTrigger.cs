@@ -43,10 +43,30 @@ public class GeneralTrigger : MonoBehaviour
                     Triggered = true;
                     string itemName = other.transform.parent.gameObject.name.Replace("(Clone)","");
 
-                    if(other.GetComponent<CustomTag>().HasTag("General") || other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("Dirty") || other.GetComponent<CustomTag>().HasTag("Propellant") || other.GetComponent<CustomTag>().HasTag("NoFood") || other.GetComponent<CustomTag>().HasTag("NotCompostable"))
+                    if(other.GetComponent<CustomTag>().HasTag("General"))
                     {
                         isCorrect = true;
                         DecidedMessage = "CorrectMessage";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("Wet") || other.GetComponent<CustomTag>().HasTag("Dirty"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessageDirty";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("Propellant"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessageProp";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("NoFood"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessageNoFood";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("NotCompostable"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessageNotCompostable";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {

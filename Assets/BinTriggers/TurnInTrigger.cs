@@ -44,10 +44,20 @@ public class TurnInTrigger : MonoBehaviour
                     Triggered = true;
                     string itemName = other.transform.parent.gameObject.name.Replace("(Clone)","");
 
-                    if(other.GetComponent<CustomTag>().HasTag("Chem") || other.GetComponent<CustomTag>().HasTag("Deposit") || other.GetComponent<CustomTag>().HasTag("PlateGlass"))
+                    if(other.GetComponent<CustomTag>().HasTag("Chem"))
                     {
                         isCorrect = true;
-                        DecidedMessage = "CorrectMessage";
+                        DecidedMessage = "CorrectMessageChem";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("Deposit"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessageDeposit";
+                    }
+                    else if(other.GetComponent<CustomTag>().HasTag("PlateGlass"))
+                    {
+                        isCorrect = true;
+                        DecidedMessage = "CorrectMessagePlate";
                     }
                     else if(other.GetComponent<CustomTag>().HasTag("General") || other.GetComponent<CustomTag>().HasTag("NoFood") || other.GetComponent<CustomTag>().HasTag("Dirty"))
                     {
